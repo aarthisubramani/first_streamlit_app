@@ -23,7 +23,7 @@ my_data_row = my_cur.fetchall()
 streamlit.text("Hello from Snowflake:")
 added_fruit = streamlit.text_input("Enter fruit to add:",'')
 my_data_row.append(added_fruit)
-streamlit.text(my_data_row)
+streamlit.dataframe(my_data_row)
 
 
 
